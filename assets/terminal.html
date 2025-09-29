@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phantom Terminal</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    .terminal {
+      border: 2px solid #0f0;
+      padding: 20px;
+      box-shadow: 0 0 20px #0f0;
+    }
+    #output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+    }
+    input {
+      background-color: #111;
+      color: #0f0;
+      border: 1px solid #0f0;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <h2>PHANTOM TERMINAL</h2>
+    <p>Enter code to unlock lore:</p>
+    <input type="text" id="terminalInput" placeholder="e.g. initiate breach" />
+    <div id="output"></div>
+  </div>
+
+  <script>
+    const output = document.getElementById("output");
+    const input = document.getElementById("terminalInput");
+
+    const codes = {
+      "initiate breach": "Breach confirmed. Phantom signal decoded. HUD distortion imminent.",
+      "track_03": "Track 03 is a sonic rebellion. No sleep. Just distortion and truth.",
+      "ghost_protocol": "Spirit avatar deployed. Portal sequence engaged.",
+      "phantom_mode": "Phantom Mode: Booth-forged. Glitch-reactive. You are now part of the system.",
+      "access_lore": "Lore archive unlocked. Each track is a transmission. Each glitch a key.",
+      "matrix_rain": "Visual override: Matrix rain activated. You are inside the scroll.",
+      "bass_drop": "Bass threshold breached. Booth resonance initiated.",
+      "glitch_reactor": "Glitch protocol engaged. FX distortion syncing with signal.",
+      "hud_flash": "HUD flash triggered. Visual pulse echoing Phantom’s frequency.",
+      "fx_trigger": "FX system armed. Awaiting booth input.",
+      "booth_macro": "Booth macro deployed. FL Studio preset loaded.",
+      "unlock_track_07": "Track 07 unlocked. Sonic fragment added to your archive.",
+      "phantom_light": "Phantom Light activated. You now see what others scroll past.",
+      "terminal_exit": "Redirecting to Phantom Interface...",
+      "enter_archive": "Archive breach detected. You are now inside Phantom’s memory loop.",
+      "phantom_truth": "Truth is encrypted. You must glitch deeper to decode it."
+    };
+
+    input.addEventListener("keypress", function(e) {
+      if (e.key === "Enter") {
+        const code = input.value.trim().toLowerCase();
+        const response = codes[code] || "Unknown code. Glitch detected.";
+        output.textContent = response;
+
+        if (code === "terminal_exit") {
+          setTimeout(() => {
+            window.location.href = "../index.html";
+          }, 3000);
+        }
+
+        input.value = "";
+      }
+    });
+
+  </script>
+</body>
+</html>
