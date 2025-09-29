@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matrix Productions Recording Studio</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <!-- Hero with parallax background and glitch title -->
+  <header class="hero parallax">
+    <canvas id="matrixRain"></canvas>
+    <div class="hero-inner">
+      <img src="assets/logo.png" alt="Matrix Logo" class="logo" />
+      <h1 class="glitch" data-text="MATRIX PRODUCTIONS">MATRIX PRODUCTIONS</h1>
+      <p class="tagline">Where Sound Meets Vision</p>
+      <h2 class="artist-name">Phantom of the Matrix</h2>
+      <a href="#contact" class="cta">Book a session</a>
+    </div>
+  </header>
+  <main>
+    <!-- Overview -->
+    <section class="about section">
+      <h2>Studio overview</h2>
+      <p>Matrix Productions Recording Studio is a boutique audio facility based in Pink Hill, NC, blending cinematic creativity with cutting-edge tech. Powered by FL Studio, Samsung monitors, and a Mac Studio rig, we deliver immersive soundscapes for artists, developers, and filmmakers.</p>
+    </section>
+
+    <!-- Services -->
+    <section class="services section">
+      <h2>Services</h2>
+      <ul class="grid two">
+        <li><span>🎧</span> Audio Engineering & Mixing</li>
+        <li><span>🎼</span> Music Production & Songwriting</li>
+        <li><span>🎙️</span> Voiceover Recording</li>
+        <li><span>🕹️</span> Sound Design for Games & Film</li>
+      </ul>
+    </section>
+
+    <!-- Setup -->
+    <section class="setup section">
+      <h2>Studio setup</h2>
+      <p>Mac Studio M1/M2, FL Studio 20, Samsung Studio Monitors, Apollo Twin X, Shure SM7B, MIDI Controllers, and a fully treated vocal booth.</p>
+    </section>
+
+    <!-- Rates -->
+    <section class="rates section">
+      <h2>Rates & packages</h2>
+      <ul class="rates-list">
+        <li><strong>Hourly Engineering:</strong> $75/hr</li>
+        <li><strong>Full Song Production:</strong> $500–$1500</li>
+        <li><strong>Demo Packages:</strong> $300</li>
+        <li><strong>Game Audio Bundles:</strong> Custom pricing</li>
+      </ul>
+    </section>
+
+    <!-- Audio players -->
+    <section class="audio section" id="audio">
+      <h2>Featured audio</h2>
+      <div class="audio-grid">
+        <div class="audio-card">
+          <h3>phantom of the matrix</h3>
+          <audio controls preload="none">
+            <source src="assets/track1.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="audio-card">
+          <h3>phantom of the matrix</h3>
+          <audio controls preload="none">
+            <source src="assets/track2.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="audio-card">
+          <h3>phantom of the matrix</h3>
+          <audio controls preload="none">
+            <source src="assets/track3.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube -->
+    <section class="media section" id="media">
+      <h2>Studio sessions</h2>
+      <div class="video-wrapper">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/pjWIvDn6Reg"
+          title="Matrix Productions Studio Session"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="center">
+        <a class="btn" href="https://youtube.com/@kushlorda.k.abigslime1981" target="_blank" rel="noopener">
+          Visit the YouTube channel
+        </a>
+      </p>
+    </section>
+
+    <!-- Booking calendar (Google) -->
+    <section class="booking section" id="booking">
+      <h2>Booking calendar</h2>
+      <p>Pick a slot that works for you. You’ll receive a confirmation by email.</p>
+      <!-- Replace the src below with your public Google Calendar "Appointments schedule" embed link -->
+      <div class="calendar-wrapper">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=a4a87dcdb94aa342cb0a64fe04c2c8e5d3ef3c30f364c25208e38538ff9ab6f7%40group.calendar.google.com&ctz=America%2FNew_York"
+          style="border:0"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+      <p class="small center">Tip: In Google Calendar, create an “Appointments schedule,” make it public, then copy the embed link and replace the src.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <h2>Contact</h2>
+
+      <!-- Quick mailto button (works instantly) -->
+      <p class="center">
+        <a class="btn" href="mailto:matrixproductions187@gmail.com?subject=Booking%20Inquiry&body=Hi%20Matrix%20Productions%2C%0A%0AProject%20details%3A%0ABudget%3A%0ATimeline%3A%0A%0AThanks!">
+          Email us directly
+        </a>
+      </p>
+
+      <!-- Full contact form -->
+      <form id="contactForm" class="form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Audio Engineering & Mixing</option>
+            <option>Music Production & Songwriting</option>
+            <option>Voiceover Recording</option>
+            <option>Sound Design for Games & Film</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your project…" required></textarea>
+        </div>
+
+<!-- 🔘 Trigger Button -->
+<button onclick="openPhantomModal()" style="
+  background: linear-gradient(90deg, #0ff, #f0f);
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #0ff;
+">
+  Enter Phantom Realm
+</button>
+
+<!-- 🌀 Modal Container -->
+<div id="phantomModal" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, #000 60%, #111 100%);
+  z-index: 9999;
+  animation: glitchFadeIn 0.6s ease-out;
+  box-shadow: 0 0 40px rgba(0,255,255,0.2);
+">
+  <iframe 
+    src="https://phantom.matrixproduction.org" 
+    width="100%" 
+    height="100%" 
+    style="border:none;">
+  </iframe>
+  <button onclick="closePhantomModal()" style="
+    position: absolute;
+    top: 10px; right: 10px;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+  ">
+    ✖ Close
+  </button>
+</div>
+
+<!-- ⚙️ Modal Control Script -->
+<script>
+  function openPhantomModal() {
+    document.getElementById('phantomModal').style.display = 'block';
+  }
+  function closePhantomModal() {
+    document.getElementById('phantomModal').style.display = 'none';
+  }
+</script>
+
+<!-- 🎨 Optional Animation -->
+<style>
+@keyframes glitchFadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+</style>
+<!-- ⚙️ Modal Control Script -->
+<script>
+  function openPhantomModal() {
+    document.getElementById('phantomModal').style.display = 'block';
+  }
+  function closePhantomModal() {
+    document.getElementById('phantomModal').style.display = 'none';
+  }
+</script>
+
+<!-- 🎨 Optional Animation -->
+<style>
+@keyframes glitchFadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+</style>
+<!-- Modal Control Script -->
+<script>
+  function openPhantomModal() {
+    document.getElementById('phantomModal').style.display = 'block';
+  }
+  function closePhantomModal() {
+    document.getElementById('phantomModal').style.display = 'none';
+  }
+</script>
+        <!-- Works out of the box via mailto fallback -->
+        <button type="submit" class="btn">Send request</button>
+
+        <p class="small center" id="formStatus"></p>
+      </form>
+
+      <div class="social">
+        <p><strong>Email:</strong> <a href="mailto:matrixproductions187@gmail.com">matrixproductions187@gmail.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/matrix_productions2013?igsh=MXJzNDdtMGtpNDZlcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">@matrixproductions2013</a></p>
+        <p><strong>YouTube:</strong> <a href="https://youtube.com/@kushlorda.k.abigslime1981" target="_blank" rel="noopener">Matrix Productions Channel</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matrix Productions Recording Studio</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
