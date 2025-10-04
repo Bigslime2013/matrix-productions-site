@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: read
       deployments: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     name: Publish to Cloudflare Pages
     steps:
       - name: Checkout
