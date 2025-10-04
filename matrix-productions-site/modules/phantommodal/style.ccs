@@ -8,6 +8,16 @@
   animation: glitchFadeIn 0.6s ease-out;
 }
 
+#matrixRainCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind the iframe and close button */
+}
+
+
 .hud-close {
   position: absolute;
   top: 10px; right: 10px;

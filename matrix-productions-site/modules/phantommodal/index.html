@@ -5,6 +5,7 @@
 
 <!-- Modal Container -->
 <div id="phantomModal" class="hud-modal">
+  <canvas id="matrixRainCanvas"></canvas>
   <iframe 
     src="https://phantom.matrixproduction.org" 
     width="100%" 
@@ -13,3 +14,6 @@
   </iframe>
   <button onclick="closePhantomModal()" class="hud-close">✖ Close</button>
 </div>
+
+<script type="module" src="logic.js"></script>
+<script type="module" src="matrixRain.js"></script>
