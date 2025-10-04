@@ -26,4 +26,3 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: matrix-productions-site
           directory: ./
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
